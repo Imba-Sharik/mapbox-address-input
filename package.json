@@ -1,8 +1,14 @@
 {
   "name": "mapbox-address-input",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
+  "bin": {
+    "mapbox-address-input": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "src/features"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
