@@ -29,7 +29,7 @@ export function AddressInput({
   }
 
   return (
-    <div className={className}>
+    <div className={`flex flex-col gap-4${className ? ` ${className}` : ""}`}>
       <SearchBox
         accessToken={accessToken}
         options={{ types, language: lang }}
@@ -45,16 +45,18 @@ export function AddressInput({
         }}
       />
 
-      <AddressMap
-        accessToken={accessToken}
-        lat={value?.lat}
-        lng={value?.lng}
-        showMarker={value?.feature_type === "address"}
-        featureType={value?.feature_type}
-        language={lang}
-        mapStyle={mapStyle}
-        className={mapClassName}
-      />
+      <div style={{ marginTop: "12px" }}>
+        <AddressMap
+          accessToken={accessToken}
+          lat={value?.lat}
+          lng={value?.lng}
+          showMarker={value?.feature_type === "address"}
+          featureType={value?.feature_type}
+          language={lang}
+          mapStyle={mapStyle}
+          className={mapClassName}
+        />
+      </div>
     </div>
   );
 }

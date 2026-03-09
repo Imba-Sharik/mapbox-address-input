@@ -5,9 +5,6 @@ const nextConfig = {
     "@mapbox/search-js-core",
     "mapbox-gl",
   ],
-  experimental: {
-    externalDir: true,
-  },
 };
 
 export default nextConfig;

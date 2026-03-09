@@ -1,4 +1,4 @@
-import { DemoShell } from "../components/DemoShell";
+import { DemoShell } from "@/components/DemoShell";
 
 export default function HomePage() {
   const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "";

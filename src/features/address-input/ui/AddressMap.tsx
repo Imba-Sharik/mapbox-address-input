@@ -1,6 +1,5 @@
 "use client";
 
-import "mapbox-gl/dist/mapbox-gl.css";
 import { useEffect, useRef } from "react";
 import type { Map as MapboxMap, Marker as MapboxMarker } from "mapbox-gl";
 
@@ -28,6 +27,8 @@ interface AddressMapProps {
   featureType?: string;
   language?: string;
   mapStyle?: string;
+  defaultCenter?: [number, number];
+  defaultZoom?: number;
   className?: string;
 }
 
@@ -39,6 +40,8 @@ export function AddressMap({
   featureType,
   language,
   mapStyle = DEFAULT_STYLE,
+  defaultCenter = [37.618, 55.752],
+  defaultZoom = 10,
   className,
 }: AddressMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -58,8 +61,8 @@ export function AddressMap({
       const map = new mapboxgl.Map({
         container: containerRef.current,
         style: mapStyle,
-        center: lat != null && lng != null ? [lng, lat] : [0, 0],
-        zoom: lat != null ? getZoom(featureType) : 2,
+        center: lat != null && lng != null ? [lng, lat] : defaultCenter,
+        zoom: lat != null ? getZoom(featureType) : defaultZoom,
       });
       mapRef.current = map;
 

@@ -1,34 +1,26 @@
 {
   "name": "mapbox-address-input",
   "version": "0.1.0",
-  "description": "Mapbox SearchBox + map preview. Copies source files into your project (shadcn-style).",
+  "private": true,
   "type": "module",
-  "bin": {
-    "mapbox-address-input": "./bin/index.js"
-  },
-  "files": ["bin", "src"],
   "scripts": {
-    "start": "node bin/index.js",
-    "dev": "next dev demo",
-    "build": "next build demo",
-    "preview": "next start demo"
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "next start"
   },
-  "keywords": ["mapbox", "address", "react", "nextjs", "geocoding"],
-  "license": "MIT",
   "devDependencies": {
     "@mapbox/search-js-core": "^1.0.0-beta.22",
     "@mapbox/search-js-react": "^1.0.0-beta.22",
+    "@tailwindcss/postcss": "^4",
     "@types/mapbox-gl": "^3.1.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "autoprefixer": "^10.4.20",
     "mapbox-gl": "^3.9.0",
     "next": "^15.0.0",
-    "postcss": "^8.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwindcss": "^3.4.0",
+    "tailwindcss": "^4",
     "typescript": "^5.7.0"
   }
 }

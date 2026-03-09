@@ -1,22 +1,26 @@
 "use client";
 
 import { useState } from "react";
-import { AddressInput } from "@lib";
-import type { AddressValue } from "@lib";
+import dynamic from "next/dynamic";
+import type { AddressValue } from "@/features/address-input";
+
+const AddressInput = dynamic(
+  () => import("@/features/address-input").then((m) => m.AddressInput),
+  { ssr: false }
+);
 
 export function DemoShell({ accessToken }: { accessToken: string }) {
   const [value, setValue] = useState<AddressValue | undefined>();
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <AddressInput
         accessToken={accessToken}
         value={value}
         onChange={setValue}
         onClear={() => setValue(undefined)}
         placeholder="Search for an address…"
-        className="space-y-3"
-        mapClassName="h-72 w-full rounded-xl overflow-hidden shadow-md"
+        mapClassName="h-[480px] w-full rounded-xl overflow-hidden shadow-md"
       />
 
       {value && (
