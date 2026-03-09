@@ -4,9 +4,10 @@ React-компонент для поиска адресов через Mapbox Se
 
 > [README in English](./README.md)
 
+[![npm](https://img.shields.io/npm/v/mapbox-address-input)](https://www.npmjs.com/package/mapbox-address-input)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://mapbox-address-input.vercel.app/)
 
-![preview](./src/public/screen.png)
+![preview](./public/screen.png)
 
 ## Установка
 
@@ -15,8 +16,6 @@ React-компонент для поиска адресов через Mapbox Se
 ```bash
 npx mapbox-address-input
 ```
-
-Или вручную — скопируй папку `src/features/address-input/` к себе в проект.
 
 ### Зависимости
 

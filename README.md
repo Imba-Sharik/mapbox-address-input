@@ -4,9 +4,10 @@ React component for address search via Mapbox SearchBox with map preview.
 
 > [README на русском](./README.ru.md)
 
+[![npm](https://img.shields.io/npm/v/mapbox-address-input)](https://www.npmjs.com/package/mapbox-address-input)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://mapbox-address-input.vercel.app/)
 
-![preview](./src/public/screen.png)
+![preview](./public/screen.png)
 
 ## Install
 
@@ -15,8 +16,6 @@ Copies `features/address-input/` directly into your project — like shadcn:
 ```bash
 npx mapbox-address-input
 ```
-
-Or manually — copy the `src/features/address-input/` folder into your project.
 
 ### Dependencies
 
