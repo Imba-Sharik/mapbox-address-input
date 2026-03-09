@@ -4,6 +4,8 @@ React-компонент для поиска адресов через Mapbox Se
 
 > [README in English](./README.md)
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://mapbox-address-input.vercel.app/)
+
 ![preview](./src/public/screen.png)
 
 ## Установка

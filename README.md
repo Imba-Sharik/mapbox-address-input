@@ -4,6 +4,8 @@ React component for address search via Mapbox SearchBox with map preview.
 
 > [README на русском](./README.ru.md)
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://mapbox-address-input.vercel.app/)
+
 ![preview](./src/public/screen.png)
 
 ## Install
